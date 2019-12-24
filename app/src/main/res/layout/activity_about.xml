@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.computer.smartwastecollection.About">
+
+
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_margin="20dp"
+       android:layout_centerVertical="true"
+       android:src="@drawable/blackbord"
+       />
+
+
+
+    <com.bcgdv.asia.lib.fanmenu.FanMenuButtons
+        android:background="#CCFFFFFF"
+        android:id="@+id/myFABSubmenu"
+        android:layout_alignBaseline="@+id/myFAB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/white"
+        android:paddingRight="@dimen/fab_submenu_margin_right"
+        android:paddingBottom="@dimen/fab_submenu_margin_bottom"
+        android:textSize="14sp"
+        app:fanMenuLabels="@array/fan_labels"
+        app:fanButtonColors="@array/button_colors"
+        app:fanLeftDrawable="@array/button_icons"
+        app:fanRememberMovedPosition="true"
+        app:fanMinBounceBackAngle="-30"
+        app:fanMaxBounceBackAngle="50"
+        android:visibility="invisible"
+        app:elevation="4dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myFAB"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin_right"
+        android:src="@android:drawable/btn_star_big_off"
+        app:elevation="4dp" />
+
+
+
+
+
+</RelativeLayout>

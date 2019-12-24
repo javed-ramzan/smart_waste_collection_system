@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#39CCCC</color>
+    <color name="colorPrimaryDark">#4B485B</color>
+    <color name="colorAccent">#39CCCC</color>
+
+    <color name="buttoncolor">#d4cbd2</color>
+    <color name="buttoncolor_trans">#80d4cbd2</color>
+
+    <color name="orange">#8E7D68</color>
+
+
+
+    //Menu button fan
+    <color name="red_1">#C2185B</color>
+    <color name="red_2">#E91E63</color>
+    <color name="red_3">#F44336</color>
+    <color name="red_4">#FF5722</color>
+    <color name="red_5">#D3296C</color>
+    <color name="red_6">#FA2F74</color>
+    <color name="red_7">#F55447</color>
+    <color name="red_8">#FF6833</color>
+    <integer-array name="button_colors">
+        <item>@color/red_1</item>
+        <item>@color/red_2</item>
+        <item>@color/red_3</item>
+        <item>@color/red_4</item>
+        <item>@color/red_5</item>
+        <item>@color/red_6</item>
+        <item>@color/red_7</item>
+        <item>@color/red_8</item>
+    </integer-array>
+
+    <array name="button_icons">
+        <item>@drawable/bg_addgoal</item>
+        <item>@drawable/ic_cashout</item>
+        <item>@drawable/ic_invest</item>
+        <item>@drawable/ic_qrcode</item>
+        <item>@drawable/bg_addgoal</item>
+        <item>@drawable/ic_cashout</item>
+        <item>@drawable/ic_invest</item>
+        <item>@drawable/ic_qrcode</item>
+    </array>
+
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+    <color name="Gray" >#808080</color>
+    <color name="md_blue_800">#3b50ce</color>
+    <color name="md_blue_300">#91a7ff</color>
+    <color name="md_grey_400">#bdbdbd</color>
+
+    <color name="lightgray">#ededed</color>
+
+    <color name="deeppurple">#7c4dff</color>
+
+</resources>

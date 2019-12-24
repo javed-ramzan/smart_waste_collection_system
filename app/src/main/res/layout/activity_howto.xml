@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.computer.smartwastecollection.howto">
+
+
+
+    <ss.com.bannerslider.views.BannerSlider
+        android:id="@+id/banner_slider1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:interval="3000"
+        app:loopSlides="true"
+        app:defaultIndicators="circle"
+        app:defaultBanner="1"
+        app:animateIndicators="true"
+        app:selected_slideIndicator="@drawable/selected_slide_indicator"
+        app:unselected_slideIndicator="@drawable/unselected_slide_indicator"
+        app:indicatorSize="12dp"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.computer.smartwastecollection.HomeScreen">
+
+
+    <ss.com.bannerslider.views.BannerSlider
+        android:id="@+id/banner_slider1"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        app:interval="2000"
+        app:loopSlides="true"
+        app:defaultIndicators="circle"
+        app:defaultBanner="1"
+        app:animateIndicators="true"
+        app:selected_slideIndicator="@drawable/selected_slide_indicator"
+        app:unselected_slideIndicator="@drawable/unselected_slide_indicator"
+        app:indicatorSize="12dp"
+        />
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/edit_text_style"
+            android:layout_below="@+id/banner_slider1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome "
+                android:id="@+id/welcome"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+
+                />
+
+
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:id="@+id/collection"
+                android:onClick="collection"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/dotted_border"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/collection_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/gari"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp"
+                    />
+
+                <TextView
+                    android:id="@+id/mtextcollection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/collection_profile_image"
+                    android:text="Collection"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                     />
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:id="@+id/Report"
+                android:onClick="report"
+                android:layout_height="130dp"
+                android:layout_toRightOf="@+id/collection"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/dotted_border"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Report_profile_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/report"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/mtextreport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Report_profile_Image"
+                    android:text="Report"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:id="@+id/Record"
+                android:onClick="record"
+                android:layout_height="130dp"
+                android:layout_toRightOf="@+id/Report"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/dotted_border"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/record_image_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/database"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp"
+                    />
+
+                <TextView
+                    android:id="@+id/mtextrecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/record_image_profile"
+                    android:text="Analytics"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                 />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:id="@+id/alert"
+                android:onClick="alert"
+                android:layout_height="130dp"
+                android:layout_marginTop="175dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/dotted_border"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/alert_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/alert"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/mtextalert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alert_profile_image"
+                    android:text="Alerts"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                  />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="175dp"
+                android:onClick="profile"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/contact"
+                android:background="@drawable/dotted_border"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/mtextdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_picture"
+                    android:text="Profile"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                 />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:id="@+id/contact"
+                android:layout_marginTop="175dp"
+                android:onClick="contact"
+                android:layout_toRightOf="@+id/alert"
+                android:background="@drawable/dotted_border"
+                android:layout_marginLeft="15dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/contact_profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/contact"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/mtextcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contact_profile_picture"
+                    android:text="Contact"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                   />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
